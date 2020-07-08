@@ -1,0 +1,89 @@
+@font-face {
+        font-family: "Opensans";
+        src: url("OpenSans-Regular.ttf");
+}
+
+body {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    text-align: center;
+
+}
+@font-face {
+    font-family: 'nasalization-rg';
+    src: url('nasalization-rg.ttf');
+}
+h1 {
+    font-family: "nasalization-rg";
+    color: #27d1ff ;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+header {
+    background-image: url(texture-header.jpg);
+    background-size: 150px;
+}
+nav {
+    background:#2e2f30;
+    margin-right: 50px;
+    margin: 0px;
+    color: white;
+    text-align: right;
+    vertical-align: middle;
+}
+
+h2 {
+    box-shadow: 8px black ;
+    font-family: "Opensans" ;
+    columns: #e6e6e6;
+}
+
+p{
+    margin-left: 330px;
+    width: 750px;
+}
+
+.p2{
+    float: none;
+}
+
+table{
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 550px;
+}
+.p3{
+    background: #27d1ff;
+    color: white;
+}
+.p4{
+    background: #27d1ff;
+    color: white;
+}
+button{
+    background: #27d1ff;
+    color: white;
+    margin-left: 20px;
+
+}
+.p6{
+    background: white;
+    border: groove #e6e6e6 2px;
+    font-family: "Open-sans";
+}
+
+.navigationcolor {
+    color: white;
+
+}
+.navigationcolor:hover{
+    color: #17c1ff;
+
+}
+a {
+    color: #17c1ff
+}

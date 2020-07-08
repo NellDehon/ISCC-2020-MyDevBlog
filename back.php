@@ -9,7 +9,7 @@
 <h1> MyDevBlog</h1> 
 <nav>
             <a class="navigationcolor" href="accueil.html" >Accueil</a>
-            <a class="navigationcolor" href="contact.html"> Contact</a> 
+            <a class="navigationcolor" href="contact.php"> Contact</a> 
             <a class="navigationcolor" href="articles.html"> Articles </a>
         </nav> 
 

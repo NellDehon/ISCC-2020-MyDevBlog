@@ -8,12 +8,39 @@
 <header>
 <h1> MyDevBlog</h1> 
 <nav>
-            <a class="navigationcolor" href="accueil.html" >Accueil</a>
-            <a class="navigationcolor" href="contact.html"> Contact</a> 
-            <a class="navigationcolor" href="articles.html"> Articles </a>
-        </nav> 
+         <a href="front.php?page=Accueil">Accueil</a>
+         <a href="front.php?page=Contacts">Contacts</a>
+         <a href="front.php?page=Articles">Articles</a>
+         <a href="front.php?page=connexion">Connexion</a>
+         
+                
+</nav>
 
+        <?php
+function affiche_pages()
+{
+    if ($_GET['page'] == "Accueil") {
+        echo "Accueil ";
+        include 'accueil.php';
+    }
+else if ($_GET['page'] == "Contacts") {
+    echo "Contacts";
+    include 'contact.php';
 
+} 
+else if ($_GET['page'] == "Articles") {
+    echo "Page 3!";
+    include('articles.php');
+
+} 
+else if ($_GET['page'] == "Connexion") {
+    echo "Connexion";
+    include('connexiondev.php');
+
+} 
+}
+affiche_pages();
+?>
 </header>
 <p> Ceci est une courte description du projet </p>
 </body>
