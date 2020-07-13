@@ -1,43 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="front.css" >
 </head>
 <body>
     <header>
+    <h1> MyDevBlog</h1> 
     <nav>
-    <a href="front.php?page=Accueil">Accueil</a>
-    <a href="front.php?page=Contacts">Contacts</a>
-    <a href="front.php?page=Articles">Articles</a>
-    <a href="front.php?page=connexion">Connexion</a>
-    
-           
+<a href="front.php?page=accueil">Accueil</a>
+<a href="articles.php?page=articles">Articles</a>
+<a href="contact.php?page=contacts">Contact</a>
+<a href="connexion.php?page=connexion">Connexion</a>        
 </nav>
 
-   <?php
-function afficher_pages()
-{
-if ($_GET['page'] == "Accueil") {
-   echo "Accueil ";
-   include 'accueil.php';
-}
-else if ($_GET['page'] == "Contacts") {
-echo "Contacts";
-include 'contact.php';
-
-} 
-else if ($_GET['page'] == "Articles") {
-echo "Page 3!";
-include('articles.php');
-
-} 
-else if ($_GET['page'] == "Connexion") {
-echo "Connexion";
-include('connexiondev.php');
-
-} 
-}
-afficher_pages();
-?>
     </header>
 <form action="/ma-page-de-traitement" method="post">
     <div class="p6">
@@ -52,6 +28,17 @@ afficher_pages();
     <div class="button">
         <button type="submit">Envoyer le message</button>
     </div>
+
+</body>
+    <footer>
+    <h2> Liens externes </h2>
+    <nav>
+        <a class="navigationcolor" href="vitrine-accueil.html" >Accueil Summer Code Camp</a>
+        <a class="navigationcolor" href="mon-cv.html"> Mon CV</a> 
+        <a class="navigationcolor" href="https://www.linkedin.com/in/nell-dehon-380908155/"target="_blank">Linkedin</a>
+    </nav> 
+</footer>
 </body>
 
 </html>
+

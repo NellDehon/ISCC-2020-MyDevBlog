@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<body>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="front.css" >
 </head>
-<header>
-<h1> MyDevBlog</h1> 
+<body>
+    <header>
+    <h1> MyDevBlog</h1> 
 
 <nav>
 <a href="front.php?page=accueil">Accueil</a>
@@ -14,37 +14,24 @@
 <a href="contact.php?page=contacts">Contact</a>
 <a href="connexion.php?page=connexion">Connexion</a>        
 </nav>
+<form action="securitedev.php" method="post">
+ <label for="login">login:</label>
+ <input type="text" id="login" name="user_login">
+ <label for="password"><br>password :</label>
+ <input type="text2" id="password" name="user_password">
+ 
+ <div class ="button">
+ <input type="submit" value="valide">
+ </div>
+ </form>
 <?php
-function afficher_pages()
-{
-    if ($_GET['page'] == "Accueil") {
-        echo "Accueil !";
-        include('front.php');
-    }
-else if ($_GET['page'] == "Articles") {
-    echo "Articles";
-    include('articles.php');
-} 
-else if ($_GET['page'] == "Contacts") {
-    echo "Contacts";
-    include('contact.php');
-} 
-else if ($_GET['page'] == "Connexion") {
-    echo "connexion";
-    include('connexion.php');
-}
-}
-
-afficher_pages();
+ if(isset($_SESSION['user_id'])){
+ setcookie("cookie", $_SESSION['user_id']);
+ }
+ 
 ?>
-</header>
-<p> Ceci est une courte description du projet </p>
-<img src="girafe.jpg">
-<img src="koala.jpg">
-<img src="tigre.jpg">
-<img src="elephant.jpg">
-<img src="panda.jpg">
-<footer>
+</body>
+  <footer>
     <h2> Liens externes </h2>
     <nav>
         <a class="navigationcolor" href="vitrine-accueil.html" >Accueil Summer Code Camp</a>
@@ -52,5 +39,4 @@ afficher_pages();
         <a class="navigationcolor" href="https://www.linkedin.com/in/nell-dehon-380908155/"target="_blank">Linkedin</a>
     </nav> 
 </footer>
-</body>
 </html>
