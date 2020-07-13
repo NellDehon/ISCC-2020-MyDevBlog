@@ -7,31 +7,30 @@
 <body>
     <header>
     <h1> MyDevBlog</h1> 
-    <nav>
-    <nav>
-<a class="navigationcolor" href="accueil.php?page=accueil">Accueil</a>
+
+    <a class="navigationcolor" href="accueil.php?page=accueil">Accueil</a>
 <a class="navigationcolor" href="articles.php?page=articles">Articles</a>
 <a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
 <a class="navigationcolor" href="administration.php?page=connexion">Connexion</a>        
 </nav>
-
-    </header>
-<form action="/ma-page-de-traitement" method="post">
-    <div class="p6">
-        <label for="name"><br>Nom :</label>
-        <input type="text" id="name" name="user_name">
-        <label for="mail"><br>e-mail :</label>
-        <input type="email" id="mail" name="user_mail">
-        <label for="msg"><br>Message :</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div>
-</form>
-    <div class="button">
-        <button type="submit">Envoyer le message</button>
-    </div>
-
+<form action="back.php" method="post">
+ <label for="login">login:</label>
+ <input type="text" id="login" name="user_login">
+ <label for="password"><br>password :</label>
+ <input type="text2" id="password" name="user_password">
+ 
+ <div class ="button">
+ <input type="submit" value="valide">
+ </div>
+ </form>
+<?php
+ if(isset($_SESSION['user_id'])){
+ setcookie("cookie", $_SESSION['user_id']);
+ }
+ 
+?>
 </body>
-    <footer>
+  <footer>
     <h2> Liens externes </h2>
     <nav>
         <a class="navigationcolor" href="vitrine-accueil.html" >Accueil Summer Code Camp</a>
@@ -39,7 +38,4 @@
         <a class="navigationcolor" href="https://www.linkedin.com/in/nell-dehon-380908155/"target="_blank">Linkedin</a>
     </nav> 
 </footer>
-</body>
-
 </html>
-
