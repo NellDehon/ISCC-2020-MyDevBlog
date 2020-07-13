@@ -15,8 +15,8 @@
 <a href="connexion.php?page=connexion">Connexion</a>        
 </nav>
 
-<h1>  </h1>
-<div class='p6' >
+<h1> La fin possible </h1>
+<div class='p2' >
 Chers lecteurs,
 Une très grande nouvelle, de la plus haute importance, nous est parvenu ce matin : La dernière patiente française du Covid-19 est sortie de l’hôpital, et est guérie.
 Après de longs mois de guerre, de lutte contre cet ennemi invisible, sans relâche, il semble que l’humanité voit le fond du tunnel.
@@ -37,5 +37,5 @@ En France, les gens sont tellement contents de la réouverture des commerces que
 Les français sont passés d’une désinvolture vis-à-vis du confinement à une respect monstre, suite à une augmention massive des décès.
 Le gain ? Nous avons aujourd'hui la dernière personne contaminée et hospitalisée qui sort. De nombreux tests on étés mit en place, sur presque toute la population ( à l’heure où nous
 parlons, plus de 60% de la population à été testé, permettant de briser les dernières chaînes de contamination). Ainsi, il faudra attendre plusieurs semaines pour proclamer la sortie due cette pandémie, mais la France et le monde en général semble enfin sortie d’affaire.
-Nell Dehon MCS1
+
 </div>

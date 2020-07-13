@@ -16,7 +16,7 @@
 </nav>
 
 <h1> Pourquoi la barbe est à la mode? </h1>
-<div class='p3' >
+<div class='p2' >
 
 Au travers des époques, la barbe a eu des significations différentes. Un jour symbole de la masculinité, l’autre un signe religieux, un acte politique ou encore un simple artifice de mode. La barbe se met dans tout ses états révélant des évolution de mentalités.
 Qui ne connait pas la barbe de Pierre Curie? Elle un des signes distinctif de ce grand physicien français.

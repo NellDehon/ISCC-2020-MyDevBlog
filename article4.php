@@ -16,7 +16,7 @@
 </nav>
 
 <h1> Voyage aux Pays-Bas </h1>
-<div class='p5' >
+<div class='p2' >
 
 <B>Depuis ma première visite dans ce pays lors d’un voyage scolaire en 2016 avec mon lycée, il m’est paru inconcevable de ne plus y remettre les pieds. Je vous emmène aujourd’hui à la découverte des Pays-Bas, un grand coup de coeur. </B>
 

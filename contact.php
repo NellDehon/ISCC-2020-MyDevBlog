@@ -8,10 +8,11 @@
     <header>
     <h1> MyDevBlog</h1> 
     <nav>
-<a href="front.php?page=accueil">Accueil</a>
-<a href="articles.php?page=articles">Articles</a>
-<a href="contact.php?page=contacts">Contact</a>
-<a href="connexion.php?page=connexion">Connexion</a>        
+    <nav>
+<a class="navigationcolor" href="front.php?page=accueil">Accueil</a>
+<a class="navigationcolor" href="articles.php?page=articles">Articles</a>
+<a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
+<a class="navigationcolor" href="connexion.php?page=connexion">Connexion</a>        
 </nav>
 
     </header>

@@ -9,19 +9,19 @@
 <h1> MyDevBlog</h1> 
 
 <nav>
-<a href="front.php?page=accueil">Accueil</a>
-<a href="articles.php?page=articles">Articles</a>
-<a href="contact.php?page=contacts">Contact</a>
-<a href="connexion.php?page=connexion">Connexion</a>        
+<a class="navigationcolor" href="front.php?page=accueil">Accueil</a>
+<a class="navigationcolor" href="articles.php?page=articles">Articles</a>
+<a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
+<a class="navigationcolor" href="connexion.php?page=connexion">Connexion</a>        
 </nav>
 
 </header>
 <ul>
-   <li><a href="article1.php?page=article1"> Article n'1</a></li>
-   <li><a href="article2.php?page=article2"> Article n'2</a></li>
-   <li><a href="article3.php?page=article3"> Article n'3</a></li>
-   <li><a href="article4.php?page=article4"> Article n'4</a></li>
-   <li><a href="article5.php?page=article5"> Article n'5</a></li>
+   <li><a href="article1.php?page=article1"> S'échapper sans échappement</a></li>
+   <li><a href="article2.php?page=article2"> Pourquoi la barbe est à la mode</a></li>
+   <li><a href="article3.php?page=article3"> Les avantages de le section européenne</a></li>
+   <li><a href="article4.php?page=article4"> Voyage aux Pays-Bas</a></li>
+   <li><a href="article5.php?page=article5"> La possible fin</a></li>
 </ul>
 <?php
 function afficher_pages()

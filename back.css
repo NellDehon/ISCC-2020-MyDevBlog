@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Printer";
+    src: url("Printer.ttf");
+}
+body {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    
+
+}
+header {
+    background-image: url(wallpaper.jpg);
+    background-size: 150px;
+    text-align: left;
+}
+nav {
+    background: lightblue;
+    margin-right: 50px;
+    margin: 0px;
+    color: white;
+    text-align: left;
+    vertical-align: middle;
+}

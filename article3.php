@@ -15,8 +15,8 @@
 <a href="connexion.php?page=connexion">Connexion</a>        
 </nav>
 
-<h1>  </h1>
-<div class='p4' >
+<h1> Les avantages de le section européenne </h1>
+<div class='p2' >
 <B>De plus en plus de lycées et collèges proposent une section européenne, ou orientale, dans plusieurs langues. Mais l’une des questions qui se pose est de savoir si ces classes possède un réel intérêt pour les élèves qui en font parties... </B>
 En dehors de rajouter des heures de langues à la semaine, quelle est le vrai bénéfice de cette classe, même si on est plutôt moyen auparavant par exemple ?
 Crées en 1992, l'éducation nationale française à mis un places les classes européennes ou orientales, avec pour motif : un besoin d’ouverture sur l’Europe et le monde. On y retrouve des langues tels que l’anglais, l’arabe, le chinois, le portugais, le vietnamien,.. et d’autres encore !

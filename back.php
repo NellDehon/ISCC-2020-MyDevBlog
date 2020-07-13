@@ -8,13 +8,30 @@
 <header>
 <h1> MyDevBlog</h1> 
 <nav>
-            <a class="navigationcolor" href="accueil.html" >Accueil</a>
-            <a class="navigationcolor" href="contact.php"> Contact</a> 
-            <a class="navigationcolor" href="articles.html"> Articles </a>
-        </nav> 
+<a href="ajout-article.php?page=articles">Ajouter un article</a>
+<a href="ajout-utilisateurs.php?page=contacts">Ajouter un utilisateur</a>
+<a href="utilisateurs.php?page=connexion">Utilisateurs</a>        
+</nav>
+<?php
+function afficher_pages()
+{
+    if ($_GET['page'] == "Accueil") {
+        echo "Accueil !";
+        include('back.php');
+    }
+else if ($_GET['page'] == "Articles") {
+    echo "Articles";
+    include('ajout-article.php');
+} 
+else if ($_GET['page'] == "Contacts") {
+    echo "Contacts";
+    include('ajout-utilisateurs.php');
+} 
+else if ($_GET['page'] == "Connexion") {
+    echo "connexion";
+    include('utilisateurs.php');
+}
+}
 
-
-</header>
-<p> Ceci est une courte description du projet </p>
-</body>
-</html>
+afficher_pages();
+?>
