@@ -23,7 +23,7 @@
     $width = 0;
     while ($Articles=$request -> fetch()){
         if(isset($Articles['id'])) {
-            echo "<a href= \"Articles.php?id=", $Articles['id'], "\">";
+            echo "<a href= \"article.php?id=", $Articles['id'], "\">";
            echo '<div>
          
         <div class="Article" style= "float:',$width,'%">    
