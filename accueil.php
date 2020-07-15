@@ -6,10 +6,10 @@
 <link rel="stylesheet" type="text/css" href="front.css" >
 </head>
 <?php include('header.php') ?>
-
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra dui sed dolor rutrum porta. Nam at cursus lorem, at volutpat eros. Nunc sit amet eros vulputate, aliquet diam sit amet, pharetra quam. Morbi lacus risus, elementum ut sagittis pellentesque, blandit quis odio. Sed feugiat ut turpis sit amet imperdiet. Cras quis eros mi. Donec bibendum posuere vehicula. Suspendisse potenti. Nulla ac nunc sit amet erat mollis viverra. Quisque suscipit mollis sapien in eleifend. Nunc viverra rhoncus cursus. Curabitur sollicitudin, ante a aliquam aliquet, sem quam tempor neque, eget fringilla ligula nibh ut dolor.
 
 Nulla laoreet pharetra pellentesque. Vivamus finibus blandit erat, nec tincidunt ante. Sed vitae arcu quam. Curabitur rhoncus sapien et urna tempor, et egestas sem commodo. Vivamus ligula ante, tristique at consectetur eu, semper sed nunc. Duis blandit a diam eget euismod. Nulla at tellus vitae lacus sollicitudin pulvinar ut nec quam. Praesent malesuada, felis at semper facilisis, diam nulla viverra libero, ultrices facilisis erat eros in massa. Vivamus sed molestie dui. Aenean tristique tincidunt libero, vitae aliquet magna placerat ut. </p>
+<h3> Les articles </h3>
 <div class="Articles">
     <div class="articles_items">
         <div>

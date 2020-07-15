@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php include('header.php')?>
+<h3> Contact </h3>
 <form action="/ma-page-de-traitement" method="post">
     <div class="p6">
         <label for="name"><br>Nom :</label>
