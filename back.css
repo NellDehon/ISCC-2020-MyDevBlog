@@ -21,3 +21,16 @@ nav {
     text-align: left;
     vertical-align: middle;
 }
+h1 {
+    font-family: "Printer";
+    color: darksalmon ;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: left;
+    
+}
+.navigationcolor {
+    color: darksalmon;
+    font-weight: bold;
+
+}

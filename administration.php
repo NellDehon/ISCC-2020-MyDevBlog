@@ -5,15 +5,9 @@
 <link rel="stylesheet" type="text/css" href="front.css" >
 </head>
 <body>
-    <header>
-    <h1> MyDevBlog</h1> 
+<?php include('header.php') ?>
 
-    <a class="navigationcolor" href="accueil.php?page=accueil">Accueil</a>
-<a class="navigationcolor" href="articles.php?page=articles">Articles</a>
-<a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
-<a class="navigationcolor" href="administration.php?page=connexion">Connexion</a>        
-</nav>
-<form action="back.php" method="post">
+<form action="securite.php" method="post">
  <label for="login">login:</label>
  <input type="text" id="login" name="user_login">
  <label for="password"><br>password :</label>
@@ -30,12 +24,5 @@
  
 ?>
 </body>
-  <footer>
-    <h2> Liens externes </h2>
-    <nav>
-        <a class="navigationcolor" href="vitrine-accueil.html" >Accueil Summer Code Camp</a>
-        <a class="navigationcolor" href="mon-cv.html"> Mon CV</a> 
-        <a class="navigationcolor" href="https://www.linkedin.com/in/nell-dehon-380908155/"target="_blank">Linkedin</a>
-    </nav> 
-</footer>
+<?php include('footer.php')?>
 </html>

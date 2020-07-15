@@ -12,7 +12,7 @@
     <a class="navcolor" href="accueil.php?page=front">Accueil</a>
     <a class="navcolor" href="articles.php?page=articles">Articles</a>
     <a class="navcolor" href="contact.php?page=contact">Contact</a>
-    <a class="navcolor" href="connexion.php?page=connexion">Connexion</a>
+    <a class="navcolor" href="administration.php?page=administration">Administration</a>
 </nav>
 <?php
 function afficher_pages()

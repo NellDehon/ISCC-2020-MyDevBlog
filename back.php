@@ -5,25 +5,42 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="back.css" >
 </head>
-<header>
-<h1> MyDevBlog</h1> 
+<?php include('header.php') ?>
 <nav>
-<a class="navcolor" href="accueil.php?page=front">Accueil</a>
-<a class="navcolor" href="articles.php?page=articles">Articles</a>
-<a class="navcolor" href="contact.php?page=contact">Contact</a>
-<a class="navcolor" href="connexion.php?page=connexion">Connexion</a>
-<a href="ajout-article.php?page=articles">Ajouter un article</a>
-<a href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajouter un utilisateur</a>
-<a href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
+<a class="navigationcolor" href="accueil.php?page=accueil">Accueil</a>
+<a class="navigationcolor" href="articles.php?page=articles">Articles</a>
+<a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
+<a class="navigationcolor" href="administration.php?page=administration">Administration</a>        
+<a class="navigationcolor" href="ajout-article.php?page=accueil">Ajout articles</a>
+<a class="navigationcolor" href="ajout-utilisateurs.php?page=articles">Ajout utilisateurs</a>
+<a class="navigationcolor" href="utilisateurs.php?page=contacts">Utilisateurs</a>       
 </nav>
+
+
 <?php
 function afficher_pages()
 {
-    if ($_GET['page'] == "Articles") {
+    if ($_GET['page'] == "Accueil") {
+        echo "Accueil !";
+        include('front.php');
+    }
+else if ($_GET['page'] == "Articles") {
+    echo "Articles";
+    include('articles.php');
+} 
+else if ($_GET['page'] == "Contacts") {
+    echo "Contacts";
+    include('contact.php');
+} 
+else if ($_GET['page'] == "Connexion") {
+    echo "connexion";
+    include('administration.php');
+}
+else if ($_GET['page'] == "Articles") {
     echo "Articles";
     include('ajout-article.php');
 } 
-else if ($_GET['page'] == "Ajout utilisateurs") {
+else if ($_GET['page'] == "Ajout_utilisateurs") {
     echo "Ajouter un utilisateur";
     include('ajout-utilisateurs.php');
 } 

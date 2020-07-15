@@ -5,17 +5,7 @@
 <link rel="stylesheet" type="text/css" href="front.css" >
 </head>
 <body>
-    <header>
-    <h1> MyDevBlog</h1> 
-    <nav>
-    <nav>
-<a class="navigationcolor" href="accueil.php?page=accueil">Accueil</a>
-<a class="navigationcolor" href="articles.php?page=articles">Articles</a>
-<a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
-<a class="navigationcolor" href="administration.php?page=connexion">Connexion</a>        
-</nav>
-
-    </header>
+<?php include('header.php')?>
 <form action="/ma-page-de-traitement" method="post">
     <div class="p6">
         <label for="name"><br>Nom :</label>
@@ -31,14 +21,7 @@
     </div>
 
 </body>
-    <footer>
-    <h2> Liens externes </h2>
-    <nav>
-        <a class="navigationcolor" href="vitrine-accueil.html" >Accueil Summer Code Camp</a>
-        <a class="navigationcolor" href="mon-cv.html"> Mon CV</a> 
-        <a class="navigationcolor" href="https://www.linkedin.com/in/nell-dehon-380908155/"target="_blank">Linkedin</a>
-    </nav> 
-</footer>
+<?php include('footer.php')?>
 </body>
 
 </html>
