@@ -7,6 +7,7 @@
     </head>
     <?php include('header.php')?>
 <body>
+<h3> Les derniers articles </h3>
 <?php
     include("connexion.php");
     $pdo = connect_to_database();
@@ -29,6 +30,20 @@
     }
 ?>
 </body>
+<div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+</div>
 
 <?php include('footer.php')?>
 

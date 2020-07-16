@@ -11,41 +11,41 @@
 <a class="navigationcolor" href="articles.php?page=articles">Articles</a>
 <a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
 <a class="navigationcolor" href="administration.php?page=administration">Administration</a>        
-<a class="navigationcolor" href="ajout-article.php?page=accueil">Ajout articles</a>
-<a class="navigationcolor" href="ajout-utilisateurs.php?page=articles">Ajout utilisateurs</a>
-<a class="navigationcolor" href="utilisateurs.php?page=contacts">Utilisateurs</a>       
+<a class="navigationcolor" href="ajout-article.php?page=ajout-articles">Ajout articles</a>
+<a class="navigationcolor" href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajout utilisateurs</a>
+<a class="navigationcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>       
 </nav>
 
 
 <?php
 function afficher_pages()
 {
-    if ($_GET['page'] == "Accueil") {
-        echo "Accueil !";
+    if ($_GET['page'] == "accueil") {
+        echo "";
         include('front.php');
     }
-else if ($_GET['page'] == "Articles") {
-    echo "Articles";
+else if ($_GET['page'] == "articles") {
+    echo "";
     include('articles.php');
 } 
-else if ($_GET['page'] == "Contacts") {
-    echo "Contacts";
+else if ($_GET['page'] == "contacts") {
+    echo "";
     include('contact.php');
 } 
-else if ($_GET['page'] == "Connexion") {
-    echo "connexion";
+else if ($_GET['page'] == "administration") {
+    echo "";
     include('administration.php');
 }
-else if ($_GET['page'] == "Articles") {
-    echo "Articles";
+else if ($_GET['page'] == "articles") {
+    echo "";
     include('ajout-article.php');
 } 
-else if ($_GET['page'] == "Ajout_utilisateurs") {
-    echo "Ajouter un utilisateur";
+else if ($_GET['page'] == "ajout-utilisateurs") {
+    echo "";
     include('ajout-utilisateurs.php');
 } 
-else if ($_GET['page'] == "Utilisateurs") {
-    echo "utilisateurs";
+else if ($_GET['page'] == "utilisateurs") {
+    echo "";
     include('utilisateurs.php');
 }
 }

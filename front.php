@@ -17,19 +17,19 @@
 <?php
 function afficher_pages()
 {
-    if ($_GET['page'] == "Accueil") {
+    if ($_GET['page'] == "accueil") {
         echo "Accueil !";
         include('accueil.php');
     }
-else if ($_GET['page'] == "Articles") {
+else if ($_GET['page'] == "articles") {
     echo "Articles";
     include('articles.php');
 } 
-else if ($_GET['page'] == "Contacts") {
+else if ($_GET['page'] == "contacts") {
     echo "Contacts";
     include('contact.php');
 } 
-else if ($_GET['page'] == "Connexion") {
+else if ($_GET['page'] == "administration") {
     echo "connexion";
     include('administration.php');
 }

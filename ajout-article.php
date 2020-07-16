@@ -1,90 +1,76 @@
-<?php
-function connect_to_database() {
-    $database_name = "localhost";
-    $username = "root";
-    $table = "Base2";
-    try{
-        $pdo = new PDO ( "mysql:host=$database_name; dbname=$table", $username);
-        return $pdo;
-        
-    }
-    catch (PDOException $e) {
-        echo $e ->getMessage();
-        return null;
-    }
- 
-}
-?>
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="back.css" >
+    <title>Mon super Devblog</title>
+    <meta charset="utf-8"/>
+    <link href="front.css" rel="stylesheet" type="text/css">
 </head>
+<body>
 <header>
-<h1> MyDevBlog</h1> 
-<nav>
+    <h1>Mydevblog</h1>
+   
+    <nav>
 <a class="navigationcolor" href="accueil.php?page=front">Accueil</a>
 <a class="navigationcolor" href="articles.php?page=articles">Articles</a>
-<a class="navigationcolor" href="contact.php?page=contact">Contact</a>
+<a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
 <a class="navigationcolor" href="connexion.php?page=connexion">Connexion</a>
 <a class="navigationcolor" href="ajout-article.php?page=articles">Ajouter un article</a>
 <a class="navigationcolor" href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajouter un utilisateur</a>
 <a class="navigationcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
 </nav>
-
-<?php
-function afficher_pages()
-{
-    if ($_GET['page'] == "Accueil") {
-        echo "Accueil !";
-        include('front.php');
-    }
-else if ($_GET['page'] == "Articles") {
-    echo "Articles";
-    include('articles.php');
-} 
-else if ($_GET['page'] == "Contacts") {
-    echo "Contacts";
-    include('contact.php');
-} 
-else if ($_GET['page'] == "Connexion") {
-    echo "connexion";
-    include('administration.php');
-}
-else if ($_GET['page'] == "Articles") {
-    echo "Articles";
-    include('ajout-article.php');
-} 
-else if ($_GET['page'] == "Ajout utilisateurs") {
-    echo "Ajouter un utilisateur";
-    include('ajout-utilisateurs.php');
-} 
-else if ($_GET['page'] == "Utilisateurs") {
-    echo "utilisateurs";
-    include('utilisateurs.php');
-}
-}
-
-afficher_pages();
-?>
-
-    <form action="ajout-article.php" method="post"enctype="multipart/form-data">
+</header>
+<form action="ajout-article.php?page=articles" method="post"enctype="multipart/form-data">
+     <label for="titre">titre:</label>
+ <input type="text" id="titre" name="titre">
  <label for="auteur">auteur:</label>
- <input type="text" id="auteur" name="auteur"><br><br/>
+ <input type="text" id="auteur" name="auteur">
  <label for="image"><br>image :</label>
- <input type="file" id="image" name="image"><br><br/>
- <label for="date">Date de publication:</label>
- <input type="text" id="date" name="date"><br><br/>
+ <input type="file" id="image" name="image">
  <label for= "contenu"> contenu:</label>
  <input type= "text" id= "contenu" name= "contenu"><br><br/>
  <label for="extrait">extrait:</label>
- <input for= "text" id= "extrait" name= "extrait"><br><br/>
- 
+ <input type= "text" id= "extrait" name= "extrait"><br><br/>
  <div class ="button">
  <input type="submit" value="valide">
  </div>
  </form> 
+<?php
+function transfert(){
+    $ret        = false;
+    $img_blob   = '';
+    $taille_max = 20000000;
+    $ret        = is_uploaded_file($_FILES['image']['tmp_name']);
+    
+    if (!$ret) {
+        echo "Problème de transfert";
+        return false;
+    } else {
+ 
+        
+        if ($_FILES['image']['size']> $taille_max) {
+            echo "Trop gros !";
+            return false;
+        }
+        include('connexion.php');
+        $pdo= connect_to_database();
+        $img_blob = file_get_contents ($_FILES['image']['tmp_name']);
+        $req = "INSERT INTO Articles (" . 
+                                "titre, auteur, contenu,extrait,image" .
+                                ") VALUES (" .
+                                "'" . $_POST['titre'] . "', " .
+                                "'" . $_POST['auteur'] . "', " .
+                                "'" . $_POST['contenu'] . "', " .
+                                "'" . $_POST['extrait']. "', " .
+                                "'" .addslashes($img_blob) . "') ";
+        $ret = $pdo->prepare($req);
+        $ret->execute();
+        return true;
+    }
+}
+if(isset($_POST['titre'])){
+    transfert();
+    echo 'Votre article est envoyé';
+}
+?>
 </body>
 </html>

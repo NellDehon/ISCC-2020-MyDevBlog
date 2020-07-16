@@ -43,13 +43,7 @@ Nulla laoreet pharetra pellentesque. Vivamus finibus blandit erat, nec tincidunt
 <br></br>
 <br></br>
 <br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+
 </div>
 <?php include('footer.php')?>
 </body>
