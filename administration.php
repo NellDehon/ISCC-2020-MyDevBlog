@@ -9,15 +9,17 @@
 <h3> Administration </h3>
 
 <form action="securite.php" method="post">
- <label for="login">login:</label>
+<div class="p6">
+ <label for="login">    Login  :</label>
  <input type="text" id="login" name="user_login">
- <label for="password"><br>password :</label>
+ <label for="password"><br>Password:</label>
  <input type="text2" id="password" name="user_password">
  
  <div class ="button">
- <input type="submit" value="valide">
+ <input type="submit" value="Connexion">
  </div>
  </form>
+</div>
 <?php
  if(isset($_SESSION['user_id'])){
  setcookie("cookie", $_SESSION['user_id']);

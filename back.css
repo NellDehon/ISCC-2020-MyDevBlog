@@ -14,7 +14,7 @@ header {
     text-align: left;
 }
 nav {
-    background: lightblue;
+    background: lightpink;
     margin-right: 50px;
     margin: 0px;
     color: white;
@@ -32,5 +32,26 @@ h1 {
 .navigationcolor {
     color: darksalmon;
     font-weight: bold;
+
+}
+.p6{
+    background: lightpink;
+    border: groove #e6e6e6 10px;
+    font-family: "Printer";
+    text-align: center;
+}
+h3 {
+    font-family: "Printer";
+    color: mediumorchid;
+    font-size: 25px;
+    vertical-align: middle;
+    text-align: center;
+}
+button{
+    background: plum;
+    color: white;
+    margin-left: 20px;
+    font-family: "Printer";
+    text-align: center;
 
 }

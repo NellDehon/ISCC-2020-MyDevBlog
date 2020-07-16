@@ -13,27 +13,31 @@
 <a class="navigationcolor" href="accueil.php?page=front">Accueil</a>
 <a class="navigationcolor" href="articles.php?page=articles">Articles</a>
 <a class="navigationcolor" href="contact.php?page=contacts">Contact</a>
-<a class="navigationcolor" href="connexion.php?page=connexion">Connexion</a>
+<a class="navigationcolor" href="administration.php?page=administration">Connexion</a>
 <a class="navigationcolor" href="ajout-article.php?page=articles">Ajouter un article</a>
 <a class="navigationcolor" href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajouter un utilisateur</a>
 <a class="navigationcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
 </nav>
 </header>
 <form action="ajout-article.php?page=articles" method="post"enctype="multipart/form-data">
-     <label for="titre">titre:</label>
- <input type="text" id="titre" name="titre">
- <label for="auteur">auteur:</label>
- <input type="text" id="auteur" name="auteur">
- <label for="image"><br>image :</label>
- <input type="file" id="image" name="image">
- <label for= "contenu"> contenu:</label>
- <input type= "text" id= "contenu" name= "contenu"><br><br/>
- <label for="extrait">extrait:</label>
- <input type= "text" id= "extrait" name= "extrait"><br><br/>
- <div class ="button">
- <input type="submit" value="valide">
+<div class="p6">
+     <label for="titre">Titre de l'article</label>
+     <input type="text" id="titre" name="titre"><br><br/>
+    <label for="auteur">Auteur de l'article</label>
+    <input type="text" id="auteur" name="auteur"><br><br/>
+    <label for="image"><br>Image</label>
+    <input type="file" id="image" name="image"><br><br/>
+    <label for= "contenu"> Contenu de l'article</label>
+    <input type= "text" id= "contenu" name= "contenu"><br><br/>
+    <label for="extrait">Extrait de l'article</label>
+    <input type= "text" id= "extrait" name= "extrait"><br><br/>
+    
+    <div class ="button">
+        <input type="submit" value="Envoyer">
  </div>
+</div>
  </form> 
+
 <?php
 function transfert(){
     $ret        = false;
@@ -55,7 +59,7 @@ function transfert(){
         $pdo= connect_to_database();
         $img_blob = file_get_contents ($_FILES['image']['tmp_name']);
         $req = "INSERT INTO Articles (" . 
-                                "titre, auteur, contenu,extrait,image" .
+                                "Titre, Auteur, Contenu,Extrait,Image" .
                                 ") VALUES (" .
                                 "'" . $_POST['titre'] . "', " .
                                 "'" . $_POST['auteur'] . "', " .
@@ -69,8 +73,12 @@ function transfert(){
 }
 if(isset($_POST['titre'])){
     transfert();
-    echo 'Votre article est envoyé';
+    echo 'Votre article a bien été envoyé à la base de données';
 }
 ?>
+
 </body>
+
+<?php include('footer.php') ?> 
+
 </html>

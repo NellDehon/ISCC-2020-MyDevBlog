@@ -30,7 +30,7 @@ else if ($_GET['page'] == "contacts") {
     include('contact.php');
 } 
 else if ($_GET['page'] == "administration") {
-    echo "connexion";
+    echo "";
     include('administration.php');
 }
 }
@@ -38,7 +38,6 @@ else if ($_GET['page'] == "administration") {
 afficher_pages();
 ?>
 </header>
-<p> Ceci est une courte description du projet </p>
 
 
 </body>

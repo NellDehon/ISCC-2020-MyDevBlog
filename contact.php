@@ -9,16 +9,16 @@
 <h3> Contact </h3>
 <form action="/ma-page-de-traitement" method="post">
     <div class="p6">
-        <label for="name"><br>Nom :</label>
+        <label for="name"><br>Votre nom :</label>
         <input type="text" id="name" name="user_name">
-        <label for="mail"><br>e-mail :</label>
+        <label for="mail"><br>Votre e-mail :</label>
         <input type="email" id="mail" name="user_mail">
-        <label for="msg"><br>Message :</label>
+        <label for="msg"><br>Votre message :</label>
         <textarea id="msg" name="user_message"></textarea>
     </div>
 </form>
     <div class="button">
-        <button type="submit">Envoyer le message</button>
+        <button type="submit">Envoyer votre message</button>
     </div>
 
 </body>

@@ -13,7 +13,7 @@ h1 {
     color: darksalmon ;
     font-size: 40px;
     vertical-align: middle;
-    text-align: left;
+    text-align: center;
     
 }
 h2 {
@@ -29,7 +29,7 @@ header {
     text-align: left;
 }
 nav {
-    background: lightblue;
+    background: lightpink;
     margin-right: 50px;
     margin: 0px;
     color: white;
@@ -45,7 +45,7 @@ p{
     text-align: left;
 }
 .navigationcolor {
-    color: darksalmon;
+    color: darkred;
     font-weight: bold;
 
 }
@@ -64,7 +64,7 @@ p{
  
 }
 .article{
-    width: 180px;
+    width: 200px;
     height: 130px;
     border: 3px solid black;
     float: left;
@@ -72,8 +72,22 @@ p{
 }
 h3 {
     font-family: "Printer";
-    color: purple;
+    color: mediumorchid;
     font-size: 25px;
     vertical-align: middle;
-    text-align: left;
+    text-align: center;
+}
+button{
+    background: plum;
+    color: white;
+    margin-left: 20px;
+    font-family: "Printer";
+    text-align: center;
+
+}
+.p6{
+    background: lightpink;
+    border: groove #e6e6e6 10px;
+    font-family: "Printer";
+    text-align: center;
 }

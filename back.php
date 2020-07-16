@@ -52,3 +52,6 @@ else if ($_GET['page'] == "utilisateurs") {
 
 afficher_pages();
 ?>
+<?php include('footer.php') ?>
+</body>
+</html>
