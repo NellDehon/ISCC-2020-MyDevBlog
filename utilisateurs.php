@@ -52,7 +52,8 @@ else if ($_GET['page'] == "Utilisateurs") {
 
 afficher_pages();
 ?>
-  <form action="utilisateurs.php?page=utilisateurs" method="post"enctype="multipart/form-data"><br><br/>
+<h3> Supprimer un utilisateur </h3>
+  <form action="utilisateurs.php?page=utilisateurs" method="post"enctype="multipart/form-data">
   <div class="p6">
  <label for="name">Name</label>
  <input type="text" id="name" name="name"><br><br/>
