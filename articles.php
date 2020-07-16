@@ -10,7 +10,7 @@
 <?php
     include("connexion.php");
     $pdo = connect_to_database();
-    $request=$pdo->query('SELECT * FROM `Articles`');
+    $request=$pdo->query('SELECT*FROM `Articles`');
     $count = 0;
     $width = 0;
     while ($Articles=$request -> fetch()){
@@ -18,9 +18,9 @@
             echo "<a href= \"article.php?id=", $Articles['id'], "\">";
            echo '<div>
          
-        <div class="Article" style= "float:',$width,'%">    
+        <div class="article" style= "float:',$width,'%">    
             <h2>',$Articles['Titre'],'</h2>
-            <img src="data:image/jpg;base64,',base64_encode($Articles['Image']),'" alt="image vérification">;
+            <img class="article" src="data:image/jpg;base64,',base64_encode($Articles['Image']),'" alt="image vérification">;
          ',$Articles['Extrait'],'</div></div>';
             echo "</a>";
         }

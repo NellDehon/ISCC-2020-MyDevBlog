@@ -8,13 +8,13 @@
 <header>
 <h1> MyDevBlog</h1> 
 <nav>
-<a class="navcolor" href="accueil.php?page=front">Accueil</a>
-<a class="navcolor" href="articles.php?page=articles">Articles</a>
-<a class="navcolor" href="contact.php?page=contact">Contact</a>
-<a class="navcolor" href="connexion.php?page=connexion">Connexion</a>
-<a class="navcolor" href="ajout-article.php?page=articles">Ajouter un article</a>
-<a class="navcolor" href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajouter un utilisateur</a>
-<a class="navcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
+<a class="navigationcolor" href="accueil.php?page=front">Accueil</a>
+<a class="navigationcolor" href="articles.php?page=articles">Articles</a>
+<a class="navigationcolor" href="contact.php?page=contact">Contact</a>
+<a class="navigationcolor" href="connexion.php?page=connexion">Connexion</a>
+<a class="navigationcolor" href="ajout-article.php?page=articles">Ajouter un article</a>
+<a class="navigationcolor" href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajouter un utilisateur</a>
+<a class="navigationcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
 </nav>
 
 <?php
@@ -52,3 +52,17 @@ else if ($_GET['page'] == "Utilisateurs") {
 
 afficher_pages();
 ?>
+
+<form action="ajout-utilisateurs.php" method="post"enctype="multipart/form-data">
+ <label for="name">name:</label>
+ <input type="text" id="name" name="name">
+ <label for="username"><br>username :</label>
+ <input type="text" id="username" name="username"><br><br/>
+ <label for= "password"> password:</label>
+ <input type= "text" id= "password" name= "password"><br><br/>
+ <div class ="button">
+ <input type="submit" value="Valider">
+ </div>
+ </form> 
+</body>
+</html>

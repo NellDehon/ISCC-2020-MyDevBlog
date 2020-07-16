@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php include('header.php') ?>
-<h3> Connexion </h3>
+<h3> Administration </h3>
 
 <form action="securite.php" method="post">
  <label for="login">login:</label>

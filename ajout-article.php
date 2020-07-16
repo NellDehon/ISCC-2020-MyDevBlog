@@ -25,13 +25,13 @@ function connect_to_database() {
 <header>
 <h1> MyDevBlog</h1> 
 <nav>
-<a class="navcolor" href="accueil.php?page=front">Accueil</a>
-<a class="navcolor" href="articles.php?page=articles">Articles</a>
-<a class="navcolor" href="contact.php?page=contact">Contact</a>
-<a class="navcolor" href="connexion.php?page=connexion">Connexion</a>
-<a class="navcolor" href="ajout-article.php?page=articles">Ajouter un article</a>
-<a class="navcolor" href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajouter un utilisateur</a>
-<a class="navcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
+<a class="navigationcolor" href="accueil.php?page=front">Accueil</a>
+<a class="navigationcolor" href="articles.php?page=articles">Articles</a>
+<a class="navigationcolor" href="contact.php?page=contact">Contact</a>
+<a class="navigationcolor" href="connexion.php?page=connexion">Connexion</a>
+<a class="navigationcolor" href="ajout-article.php?page=articles">Ajouter un article</a>
+<a class="navigationcolor" href="ajout-utilisateurs.php?page=ajout-utilisateurs">Ajouter un utilisateur</a>
+<a class="navigationcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
 </nav>
 
 <?php
@@ -69,9 +69,22 @@ else if ($_GET['page'] == "Utilisateurs") {
 
 afficher_pages();
 ?>
-<php
-INSERT INTO `Articles` ( `Titre`, `Image`, `Date de publication`, `Auteur`,`Contenu`, `Extrait`) VALUES
-('La rue', 'T-shirt coton de couleur rouge', 15.5, 5),
-;
 
-?>
+    <form action="ajout-article.php" method="post"enctype="multipart/form-data">
+ <label for="auteur">auteur:</label>
+ <input type="text" id="auteur" name="auteur"><br><br/>
+ <label for="image"><br>image :</label>
+ <input type="file" id="image" name="image"><br><br/>
+ <label for="date">Date de publication:</label>
+ <input type="text" id="date" name="date"><br><br/>
+ <label for= "contenu"> contenu:</label>
+ <input type= "text" id= "contenu" name= "contenu"><br><br/>
+ <label for="extrait">extrait:</label>
+ <input for= "text" id= "extrait" name= "extrait"><br><br/>
+ 
+ <div class ="button">
+ <input type="submit" value="valide">
+ </div>
+ </form> 
+</body>
+</html>
