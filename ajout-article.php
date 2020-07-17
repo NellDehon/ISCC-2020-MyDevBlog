@@ -19,7 +19,8 @@
 <a class="navigationcolor" href="utilisateurs.php?page=utilisateurs">Utilisateurs</a>        
 </nav>
 </header>
-<form action="ajout-article.php?page=articles" method="post"enctype="multipart/form-data">
+<h3>Ajouter un article</h3>
+<form action="ajout-article.php?page=articles" method="post"enctype="multipart/form-data"><br></br>
 <div class="p6">
      <label for="titre">Titre de l'article</label>
      <input type="text" id="titre" name="titre"><br><br/>
